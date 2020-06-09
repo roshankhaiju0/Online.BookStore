@@ -1,0 +1,2582 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+:root{
+    --primary: #073C5B;
+    --primary-2: #10124A;
+
+    --white: #fff;
+--google-blue: #4285f4;
+--button-active-blue: #1669F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr{
+    color: rgba(0,0,0, 0.5); 
+}
+
+/* body{
+    position: relative;
+} */
+
+
+
+/* CSS FOR INDEX PAGE */
+
+/* header section */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    /* border: solid 2px #000000; */
+    height: 3.8rem;
+    margin: 1.8rem 1.2rem 2rem 1.2rem;
+}
+
+.logo a{
+    text-decoration: none;
+   }
+.logo .bl,.wh{
+    background-color: var(--primary-2);
+    color: #ffffff;
+    padding: .5rem .2rem;
+    font-size: 2rem;
+    border: 4px solid var(--primary-2);
+box-sizing: border-box;
+}
+.logo .wh{
+    background-color: #ffffff;
+    color: var(--primary-2);
+    padding: .5rem;
+}
+.logo .wh:hover{
+    background-color: var(--primary-2);
+    color: #ffffff;
+    padding: .5rem;
+    transition: .3s;
+}
+
+.nav ul{
+list-style: none;
+display: flex;
+padding-top: .8rem;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--primary-2);
+margin:  0 2.1rem;
+}
+.nav ul li a:hover{
+    text-decoration: none;
+    color: #1148a1;
+    cursor: pointer;
+}
+
+.nav ul .fa{
+    margin-right: 15px;
+}
+
+/* CSS FORNavigation dropdown section */
+
+.dropdown-1{
+    display: none;
+    position: relative;
+    margin-left: 30px;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.4) );
+    
+}
+.dropdown-1 ul{
+    display: block;
+
+}
+.dropdown-1 ul li{
+    margin: 10px;
+    margin-top: 5px;
+    
+}
+.dropdown-1 ul li a{
+    margin: 0;
+    font-size: 1.4rem;
+}
+.nav ul li:hover .dropdown-1{
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-2{
+    background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0) );
+    position: absolute;
+    left: -180px;
+    top: 40%;
+    display: none;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.dropdown-2 ul{
+    display: block;
+    margin-right: 20px;
+}
+.dropdown-1 ul li:hover .dropdown-2{
+    display: block;
+    cursor: pointer;
+}
+
+/* CSS for navigation dropdown section close  */
+
+
+/* header section close */
+
+
+/* main section */
+
+/* banenr section */
+.banner{
+    margin: 1.8rem 1.2rem 0 1.2rem;
+}
+.banner img{
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 9vh;
+    
+}
+/* banenr section  */
+
+/* content section  */
+
+.content{
+    height: 236.vh;
+    background-color: var(--primary);
+    margin: 1.8rem 1.2rem 0 1.2rem;
+    padding: 5vh 133px;
+}
+
+.heading .hd-top p{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--primary);
+}
+ .heading .hd-bottom p{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+color: var(--primary);
+}
+
+.content .heading p,.content-3 .tagline p{
+    text-align: center;
+    color: #ffffff;
+}
+
+.content .bookSlider{
+    width: 100%;
+height: 307px;
+/* border: solid 2px #ffffff; */
+margin-top: 39px;
+display: flex;
+justify-content: space-between;
+
+}
+.content .bookSlider .cardBox{
+    width: 180px;
+    height: 307px;
+    /* border: solid 2px #ffffff; */
+}
+.content .bookSlider .cardBox .bookBox{
+    width: 100%;
+    height: 227px;
+    background-color: #ffffff;
+    margin-bottom: 22px;
+    position: relative;
+}
+.content .bookSlider .cardBox .bookBox img{
+    width: 130px;
+height: 186px;margin: 20px 25px;
+}
+.content .bookSlider .cardBox .bookBox div{
+    position: absolute;
+    color: #000;
+    bottom: 0%;
+   background: rgba(212, 212, 212, 0.7);
+   width: 100%;
+   padding: 20px 0;
+
+text-align: center;
+
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear; 
+   transition: visibility 0s, opacity 0.5s linear;
+}
+.content .bookSlider .cardBox p{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.content .bookSlider .cardBox .bookBox:hover div{
+ visibility: visible;
+ opacity: 1; 
+}
+.content .bookSlider .cardBox .bookBox:hover{
+    background-color: #f5eded;
+    transition: .5s;
+}
+.line{
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 48%;
+}
+
+.content .content-1{
+    position: relative;
+height: 461px;
+margin-bottom: 113px;
+/* border: 2px solid red; */
+
+}
+.content-2{
+height: 537px;
+margin-bottom: 116px;
+/* border: 2px solid red; */
+position: relative;
+}
+.content-2 .bookSlider{
+position: absolute;
+bottom: 0;
+}
+.content-2 .heading{
+    padding: 40px;
+}
+
+.content-3{
+   text-align: center;
+height: 504px;
+font-size: 72px;
+line-height: 88px;
+/* color: #ffffff; */
+/* border: 2px solid red; */
+}
+.content-3 button{
+    background: var(--primary);
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+padding: 1.2rem;
+color: #ffffff;
+}
+.content-3 button:hover{
+    background: rgb(19, 83, 119);
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+cursor: pointer;
+
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+padding: 1.2rem;
+color: #ffffff;
+transition: .3s;
+}
+.tagline{
+    padding: 49px 0 90px 0;
+}
+
+/* content section close */
+
+.bookLaunch{
+    /* width: 988px; */
+height: 878px;
+text-align: center;
+margin: 5rem 0 10rem 0;
+}
+.bookLaunch .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--primary);
+}
+.bookLaunch .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+color: var(--primary);
+}
+.bookLaunch .launchCntImg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vw;
+    padding: 80px 240px;
+}
+.bookLaunch .launchCnt{
+    padding: 105px 0 ;
+}
+.bookLaunch .launchCnt p{
+ text-align: left;
+font-size: 24px;
+line-height: 32px;
+
+color: var(--primary);
+}
+.bookLaunch .launchCnt button{
+    width: 216px;
+height: 67px;
+
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #073C5B;
+
+border: 2px solid #073C5B;
+background-color: #ffffff;
+}
+.bookLaunch .launchCnt button:hover{
+    width: 216px;
+height: 67px;
+
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #ffffff;
+
+border: 2px solid #073C5B;
+background-color: var(--primary);
+transition: .3s;
+cursor: pointer;
+}
+.bookLaunch .launchImg{
+    background: #DCE008;
+border: 10px solid #073C5B;
+box-sizing: border-box;
+
+width: 540px;
+height: 711px;
+padding: 105px 98px;
+}
+.bookLaunch .launchImg img{
+    width: 344px;
+    height: 501px;
+
+box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* main section close  */
+
+
+/* footer section  */
+footer{
+    height: 25rem;
+    background-color: var(--primary);
+    padding: 0 240px;
+}
+
+.ftr-top{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 269px 192px 97px 269px;
+    grid-gap: 4rem;
+    grid-template-areas: "ftr-1 ftr-2 ftr-3 ftr-4";
+}
+.ftr-top li{
+    list-style: none;
+    color: #ffffff;
+    font-size: 24px;
+line-height: 26px;
+}
+.ftr-top li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ftr-1{
+grid-area: ftr-1;
+}
+.ftr-2{
+    grid-area: ftr-2;
+}
+.ftr-3{
+    grid-area: ftr-3;
+}
+.ftr-4{
+    grid-area: ftr-4;
+}
+.ftr-4 .em{
+    background-color: var(--primary);
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 10px 130px 10px 10px;
+}
+.ftr-4 button{
+font-size: 24px;
+line-height: 26px;
+padding: 9px 0;
+text-align: center;
+width: 100%;
+background-color: #ffffff;
+color: var(--primary);
+}
+.ftr-4 button:hover{
+    font-size: 24px;
+    line-height: 26px;
+    padding: 9px 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    }
+
+.ftr-bottom p{
+    font-size: 24px;
+line-height: 26px;
+color: #ffffff;
+margin-top: 30px;
+}
+/* footer section close */
+
+/* CSS FOR INDEX PAGE CLOSE */
+
+
+
+/* CSS FOR BOOKSTORE PAGE */
+
+.bookstore-cnt{
+    /* height: 236.2vh;
+    background-color: var(--primary); */
+    margin: 1.8rem 1.2rem 0 1.2rem;
+    padding: 5vh 0;
+  
+}
+
+.bookstore-cnt .heading{
+    text-align: center;
+    color: var(--primary);
+}
+.bookstore-cnt .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* color: #ffffff; */
+}
+.bookstore-cnt .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+/* color: #ffffff; */
+}
+
+.bookstore-cnt .bookstore-bk{
+      
+    display: grid;
+    grid-template-columns: 348px 1fr;
+
+    margin: 42px 0;
+}
+
+.bookstore-cnt .bookstore-bk .search-filter{
+    /* background-color: red; */
+    height: 390px;
+    width: 260px;
+
+    margin: 0 42px;
+}
+.bookstore-cnt .bookstore-bk .search-filter .heading{
+    font-size: 2rem;
+    text-align: left;
+}
+.bookstore-cnt .bookstore-bk .search-filter li{
+    list-style: none;
+}
+.bookstore-cnt .bookstore-bk .search-filter li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.bookstore-cnt .bookstore-bk .cnt-books{
+    /* background-color: green; */
+    /* height: 150vh; */
+    width: 1034px;
+
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 85px; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 85px;
+    row-gap: 50px;
+
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card{
+    height: 270px;
+    width: 191px;
+    /* border: solid 2px #ffffff; */
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card .cnt-books-img-bx{
+   position: relative;
+    height: 206px;
+    width: 100%;
+    background-color: #cccccc;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card .cnt-books-img-bx img{
+    width: 130px;
+    height: 186px;
+    margin-top: 10px;
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card .cnt-books-img-bx div{
+    position: absolute;
+    color: #000;
+    bottom: 0%;
+   background: rgba(212, 212, 212, 0.7);
+   width: 100%;
+   padding: 18px 0;
+
+text-align: center;
+
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear; 
+   transition: visibility 0s, opacity 0.5s linear;
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card p{
+    font-size: 18px;
+   
+    text-align: center;
+    
+    color: var(--primary);
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card .cnt-books-img-bx:hover div{
+ visibility: visible;
+ opacity: 1; 
+}
+.bookstore-cnt .bookstore-bk .cnt-books .cnt-books-card .cnt-books-img-bx:hover{
+    background-color: #f5eded;
+    transition: .5s;
+}
+
+/* CSS FOR BOOKSTORE PAGE CLOSE */
+
+
+
+/* CSS FOR BOOK DESCRIPITON PAGE */
+
+.bookDescription{
+    margin: 120px 239px 50px 239px;
+    /* width: 928px; */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 91px;
+    grid-row-gap: 41px;
+}
+
+.bookDescription .bookDescription-img{
+    width: 474px;
+height: 474px;
+margin-left: 100px;
+background: #F7F7F7;
+
+text-align: center;
+
+grid-row: 1/3;
+}
+.bookDescription .bookDescription-img img{
+    width: 268px;
+height: 385px;
+
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+
+margin: 45px 103px;
+}
+
+.bookDescription .bookDescription-price{
+/* background-color: red; */
+}
+.bookDescription .bookDescription-price p .fnt30{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: var(--primary-2);
+}
+.bookDescription .bookDescription-price p .fnt24, 
+.bookDescription .bookDescription-info .book-head,
+.bookDescription .bookDescription-rating p{
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--primary-2);
+}
+.bookDescription .bookDescription-price p .fnt20, 
+.bookDescription .book-detail li, 
+.bookDescription .bookDescription-des p{
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--primary);
+}
+.bookDescription .bookDescription-price input{
+    height:30px; 
+    width:70px;
+    font-size: 1.5rem;
+}
+.bookDescription .bookDescription-price button{
+    width: 289px;
+height: 41px;
+background: #073C5B;
+margin-top: 30px;
+outline: none;
+border: none;
+
+padding: 8px 0;
+font-size: 22px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+
+}
+.bookDescription .bookDescription-price button:hover{
+    width: 289px;
+height: 41px;
+background: #073C5B;
+margin-top: 30px;
+outline: none;
+border: none;
+
+padding: 8px 0;
+font-size: 22px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+
+background: rgb(9, 52, 77);
+transition: .3s;
+cursor: pointer;
+}
+
+.bookDescription .bookDescription-info{
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 26px auto;
+
+    /* background-color: green; */
+}
+
+.bookDescription .bookDescription-info .book-head{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.bookDescription .bookDescription-info .book-detail{
+    display: grid;
+grid-column: 1/3;
+grid-row: 2/3;
+grid-template-columns: subgrid;
+grid-template-rows: subgrid;
+
+}
+.bookDescription .bookDescription-info .book-detail .book-detail-1{
+    grid-column: 1;
+}
+.bookDescription .bookDescription-info .book-detail .book-detail-2{
+    grid-column: 2;
+}
+.bookDescription .bookDescription-info .book-detail .book-detail-1 li, 
+.bookDescription .bookDescription-info .book-detail .book-detail-2 li{
+list-style: none;
+margin-top: 15px;
+}
+
+.bookDescription .bookDescription-des{
+
+    /* background-color: magenta; */
+}
+.bookDescription .bookDescription-des p{
+    line-height: 30px;
+}
+
+.bookDescription .bookDescription-rating{
+text-align: center;
+
+    /* background-color: maroon */
+}
+.bookDescription .bookDescription-rating .far{
+font-size: 2.3rem;
+}
+.bookDescription .bookDescription-rating button{
+    width: 289px;
+    height: 41px;
+    background: #073C5B;
+    outline: none;
+    border: none;
+    
+    padding: 8px 0;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.bookDescription .bookDescription-rating button:hover{
+    width: 289px;
+    height: 41px;
+    background: #073C5B;
+    outline: none;
+    border: none;
+    
+    padding: 8px 0;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+    background: rgb(9, 52, 77);
+transition: .3s;
+cursor: pointer;
+}
+
+.review-rating{
+    margin: 0px 239px 150px 239px;
+    /* width: 928px; */
+
+    /* background-color: greenyellow; */
+}
+.review-rating .review-rating-hd p{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: var(--primary-2);   
+}
+
+.review-rating .review-rating-user .user{
+    display: grid;
+    grid-template-columns: 60px 160px;
+    grid-gap: 23px;
+    margin: 40px 18px 18px 18px;
+}
+.review-rating .review-rating-user .user img{
+    border-radius: 50%;
+    height: 58px;
+    width: 58px;
+    border: solid 2px rgba(212, 212, 212, 0.7);
+    padding: 5px;
+}
+.review-rating .review-rating-user .user p{
+    font-size: 24px;
+    line-height: 26px;
+    
+    color: var(--primary-2);
+    margin-top: 20px;
+}
+
+.review-rating .review-rating-user .user-rating{
+    margin: 18px 18px ;
+}
+.review-rating .review-rating-user .user-rating .fas, .far{
+    font-size: 2rem;
+}
+
+.review-rating .review-rating-user .user-review{
+    margin: 0 18px ;
+}
+.review-rating .review-rating-user .user-review p{
+    font-size: 20px;
+line-height: 30px;
+
+color: var(--primary-2);
+}
+
+/* CSS FOR BOOK DESCRIPITON PAGE CLOSE*/
+
+
+/* CSS FOR OUR STORY PAGE */
+
+.ourStory-cnt{
+   /* padding: 85px 21px;
+    background-color: greenyellow; */
+    height: 180vh;
+   margin-top: 80px;
+}
+
+
+
+.ourStory-cnt .heading{
+    text-align: center;
+    color: var(--primary);
+}
+.ourStory-cnt .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* color: #ffffff; */
+}
+.ourStory-cnt .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+/* color: #ffffff; */
+}
+
+
+.ourStory-img-bx{
+    position: relative;
+
+    margin-top: 100px;
+}
+
+.ourStory-img-bx .ourStory-bx2{
+position: absolute;
+z-index: -1;
+
+width: 1310px;
+height: 933px;
+left: 100px;
+top: 180px;
+
+background: #F7F7F7;
+}
+
+.ourStory-img-bx .ourStory-img{
+}
+.ourStory-img-bx .ourStory-img img{
+position: absolute;
+left: 280px;
+z-index: 1;
+    width: 1005px;
+height: 732px;
+}
+
+.ourStory-img-bx .ourStory-bx{
+position: absolute;
+left: 200px;
+top: 330px;
+z-index: 10;
+
+    width: 568px;
+    height: 660px;
+       
+    background: #FFFFFF;
+    border: 20px solid #073C5B;
+    box-sizing: border-box;
+}
+.ourStory-img-bx .ourStory-bx p{
+    font-size: 18px;
+    line-height: 23px;
+    
+    color: var(--primary);
+    margin: 90px 85px;
+}
+
+/* CSS FOR OUR STORY PAGE CLOSE */
+
+
+/* CSS FOR OUR CONTACT PAGE  */
+
+.ourContact-cnt{
+    height: 180vh;
+    margin-top: 80px;
+}
+
+.ourContact-cnt .heading{
+    text-align: center;
+    color: var(--primary);
+}
+.ourContact-cnt .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* color: #ffffff; */
+}
+.ourContact-cnt .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+/* color: #ffffff; */
+}
+
+.ourContact-cnt .ourContact-contact-bx{
+    position: relative;
+    margin: 100px 0;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact{
+    position: absolute;
+width: 944px;
+height: 938px;
+left: 290px;
+/* top: 336px; */
+
+background: #FFFFFF;
+border: 12px solid #10124A;
+box-sizing: border-box;
+
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: 360px 31px 365px;
+
+padding: 120px 110px;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-customer-service{
+ padding-left: 10rem;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact 
+.ourContact-contact-store .p24, 
+.ourContact-contact-customer-service .p24{
+    font-weight: bold;
+    font-size: 24px;
+line-height: 40px;
+
+color: var(--primary-2);
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-store li, .ourContact-contact-customer-service li{
+    list-style: none;
+
+    font-size: 20px;
+line-height: 30px;
+color: var(--primary);
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec{
+    grid-column: 1/3;
+    grid-row: 2/4;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-gap: 3rem;
+
+    /* background-color: yellowgreen; */
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-name{
+    grid-column: 1;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-email{
+    grid-column: 2;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-message{
+    grid-column: 1/3;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec input{
+    font-size: 20px;
+line-height: 23px;
+
+color: rgba(16, 18, 74, 0.5);
+
+width: 100%;
+
+outline: none;
+border: none;
+
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-message textarea{
+
+    outline: none;
+border: none;
+}
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-message button{
+    font-size: 20px;
+line-height: 22px;
+    margin-top: 2rem;
+    padding: 10px 40px;
+margin-left: 16vw;
+
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary);
+}
+.ourContact-cnt .ourContact-contact-bx .ourContact-contact .ourContact-contact-message-sec .ourContact-contact-message-sec-message button:hover{
+    /* font-size: 20px;
+line-height: 22px;
+    margin-top: 2rem;
+    padding: 10px 40px;
+
+    background: none;
+    border: none;
+    outline: none; */
+    color: var(--primary-2);
+
+    transition: .3s;
+    cursor: pointer;
+}
+
+.ourContact-cnt .ourContact-contact-bx .ourContact-bx{
+    position: absolute;
+    z-index: -1;
+    
+    width: 1200px;
+    height: 864px;
+    left: 170px;
+    /* top: 180px; */
+
+    margin-top: 200px;
+    
+    background: #F7F7F7;
+    }
+
+/* CSS FOR OUR CONTACT PAGE SECTION CLOSE */
+
+
+/* CSS FOR SHIPPING & RETURNS PAGE */
+
+.shippingReturns-cnt{
+    height: 180vh;
+    margin-top: 80px;
+}
+
+.shippingReturns-cnt .heading{
+    text-align: center;
+    color: var(--primary);
+}
+.shippingReturns-cnt .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* color: #ffffff; */
+}
+.shippingReturns-cnt .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+/* color: #ffffff; */
+}
+
+.shippingReturns-cnt .shippingReturns-info-bx{
+    position: relative;
+    margin: 100px 0;
+}
+
+.shippingReturns-cnt .shippingReturns-info-bx .shippingReturns-info{
+    position: absolute;
+width: 944px;
+height: 938px;
+left: 290px;
+/* top: 336px; */
+
+background: #FFFFFF;
+border: 12px solid #10124A;
+box-sizing: border-box;
+
+padding: 120px 110px;
+}
+.shippingReturns-cnt .shippingReturns-info-bx .p30{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: var(--primary-2);
+}
+.shippingReturns-cnt .shippingReturns-info-bx p{
+    font-size: 20px;
+line-height: 30px;
+
+color: var(--primary);
+}
+
+.shippingReturns-cnt .shippingReturns-info-bx .shippingReturns-bx{
+    position: absolute;
+    z-index: -1;
+    
+    width: 1200px;
+    height: 864px;
+    left: 170px;
+    /* top: 180px; */
+
+    margin-top: 200px;
+    
+    background: #F7F7F7;
+    }
+
+/* CSS FOR SIPPING & RETURNS PAGE CLOSE */
+
+
+/* CSS FOR SHIPPING & RETURNS PAGE */
+
+.storePolicy-cnt{
+    height: 230vh;
+    margin-top: 80px;
+}
+
+.storePolicy-cnt .heading{
+    text-align: center;
+    color: var(--primary);
+}
+.storePolicy-cnt .heading .hd-top{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* color: #ffffff; */
+}
+.storePolicy-cnt .heading .hd-bottom{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 4.8rem;
+/* color: #ffffff; */
+}
+
+.storePolicy-cnt .storePolicy-info-bx{
+    position: relative;
+    margin: 100px 0;
+}
+
+.storePolicy-cnt .storePolicy-info-bx .storePolicy-info{
+    position: absolute;
+width: 944px;
+height: 1350px;
+left: 290px;
+/* top: 336px; */
+
+background: #FFFFFF;
+border: 12px solid #10124A;
+box-sizing: border-box;
+
+padding: 120px 110px;
+}
+.storePolicy-cnt .storePolicy-info-bx .p30{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: var(--primary-2);
+}
+.storePolicy-cnt .storePolicy-info-bx p{
+    font-size: 20px;
+line-height: 30px;
+
+color: var(--primary);
+}
+.storePolicy-cnt .storePolicy-info-bx li{
+    font-size: 20px;
+line-height: 30px;
+
+color: var(--primary);
+
+margin-left: 15px;
+}
+
+.storePolicy-cnt .storePolicy-info-bx .storePolicy-bx{
+    position: absolute;
+    z-index: -1;
+    
+    width: 1200px;
+    height: 1280px;
+    left: 170px;
+    /* top: 180px; */
+
+    margin-top: 200px;
+    
+    background: #F7F7F7;
+    }
+
+/* CSS FOR SIPPING & RETURNS PAGE CLOSE */
+
+
+/* CSS FOR CUSTOMER LOGIN PAGE */
+.loginSection{
+    /* background-color: greenyellow; */
+    margin: 50px 372px;
+}
+
+.loginSection .head{
+    text-align: center;
+}
+
+.loginSection .head .head-top p{
+    font-size: 48px;
+line-height: 53px;
+
+color: var(--primary-2);
+}
+.loginSection .head .head-bottom p{
+    font-size: 24px;
+line-height: 70px;
+
+color: #000000;
+}
+.loginSection .head .head-bottom p a{
+ 
+color: #3C4F90;
+
+text-decoration: none;
+}
+
+.loginSection .loginForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+/* grid-gap: 60px; */
+margin: 70px 0;
+}
+
+.loginSection .loginForm .loginForm-lf{
+    grid-column: 1;
+    /* background-color: yellow; */
+    border-right: solid 1px #cccccc;
+    padding-right: 25px;
+}
+.loginSection .loginForm .loginForm-lf .namePass input{
+    font-size: 20px;
+line-height: 23px;
+
+color: rgba(16, 18, 74, 0.5);
+
+width: 100%;
+
+background: none;
+margin-top: 1.2rem;
+
+outline: none;
+border: none;
+}
+.loginSection .loginForm .loginForm-lf .forgetPass {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 25px 0;    
+}
+.loginSection .loginForm .loginForm-lf .forgetPass a, p{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+.loginSection .loginForm .loginForm-lf .forgetPass a:hover{
+    color: rgba(0, 0, 0, 1);
+}
+
+.loginSection .loginForm .loginForm-lf button{
+    background: #FFFFFF;
+border: 1px solid #007CD6;
+box-sizing: border-box;
+border-radius: 25px;
+
+font-size: 14px;
+line-height: 14px;
+color: #007CD6;
+
+padding: 13px 48px;
+margin-top: 20px;
+
+}
+.loginSection .loginForm .loginForm-lf button:hover{
+    background-color: #007CD6;
+    color: #FFFFFF;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.loginSection .loginForm .loginForm-rt{
+    grid-column: 2;
+    /* background-color: red; */
+    border-left: solid 1px #cccccc;
+    padding: 25px;
+    
+}
+
+
+.logIn-btn {
+  width: 270px;
+  height: 42px;
+  background-color: var(--google-blue);
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  
+}
+.logIn-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white);
+  }
+  .logIn-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    
+    margin: 11px 11px 0px;
+    color: var(--white);
+ 
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 0 12px 50px;
+ 
+    font-family: "Roboto";
+  }
+ .logIn-btn:hover {
+    box-shadow: 0 0 6px var(--google-blue);
+    cursor: pointer;
+  }
+  .logIn-btn:active {
+    background: var(--button-active-blue);
+  }
+
+
+.loginSection .loginForm .loginForm-rt button img{
+    width: 16px;
+height: 26px;
+background-color: #fff;
+border: 1px solid #0963A4;
+/* box-sizing: border-box; */
+padding: 7px 13px;
+}
+
+.loginSection .foot p{
+    font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: rgba(0, 0, 0, 0.7);
+
+margin-top: 40px;
+}
+
+/* CSS FOR CUSTOMER LOGIN PAGE CLOSE */
+
+
+
+/* CSS FOR MY_CART & ORDER_SUMMARY PAGE */
+
+.myCart_orderSummary {
+display: grid;
+grid-template-columns: auto auto;
+width: 307px;
+margin: 50px 224px;
+    /* background-color: yellow; */
+}
+
+.myCart_orderSummary .myCart{
+width: 594px;
+
+padding: 46px 25px 0 0;
+overflow-y: hidden;
+overflow-x: hidden;
+
+    /* background-color: gold; */
+}
+.myCart_orderSummary .myCart:hover{
+    overflow-y: scroll;
+}
+.myCart_orderSummary .myCart .myCartpdt{
+    width: 100%;
+height: 110px;
+margin: 15px 0;
+display: grid;
+grid-template-columns: repeat(5, auto);
+
+/* background-color: blueviolet; */
+}
+.myCart_orderSummary .myCart .myCartpdt p{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--primary);
+}
+.myCart_orderSummary .myCart .myCartpdt .myCartpdt-imgbx{
+    width: 102px;
+height: 110px;
+background-color: #f7f7f7;
+text-align: center;
+
+}
+.myCart_orderSummary .myCart .myCartpdt .myCartpdt-imgbx img{
+    width: 72px;
+height: 100px;
+margin: 5px 15px;
+}
+.myCart_orderSummary .myCart .myCartpdt .myCartpdt-name .price{
+    color: rgba(16, 18, 74, 0.5);
+}
+.myCart_orderSummary .myCart .myCartpdt .myCartpdt-qty input{
+    height:30px; 
+    width:50px;
+    font-size: 1.5rem;
+}
+.myCart_orderSummary .myCart .myCartpdt .close{
+   
+    border-radius: 50%;
+    border: solid #cccccc 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:  0 .3rem;
+}
+.myCart_orderSummary .myCart .myCartpdt .close:hover{
+    background-color: #cccccc;
+    transition: .3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.myCart_orderSummary .orderSummary{
+    width: 400px;
+    
+padding: 46px 25px 0 25px;
+
+    /* background-color: #4285f4; */
+}
+
+.myCart_orderSummary .orderSummary .heading p,.myCart .heading p{
+    font-size: 26px;
+line-height: 35px;
+margin-bottom: 5px;
+
+color: #10124A;
+}
+
+.myCart_orderSummary .orderSummary .orderSummary-top, .orderSummary-bottom{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 25px 0 25px 0;
+}
+
+.myCart_orderSummary .orderSummary .orderSummary-top .orderSummary-lf p{
+    font-size: 20px;
+    line-height: 28px;
+
+    
+    color: var(--primary);
+}
+
+.myCart_orderSummary .orderSummary .orderSummary-top .orderSummary-rt p{
+    font-size: 20px;
+    line-height: 28px;
+text-align: right;
+    
+    color: var(--primary);
+}
+
+.myCart_orderSummary .orderSummary button{
+    width: 290px;
+height: 41px;
+border: none;
+outline: none;
+margin-left: 50px;
+
+background: #073C5B;
+
+font-size: 22px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.myCart_orderSummary .orderSummary button:hover{
+    background-color: rgb(11, 98, 148);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* CSS FOR MY_CART & ORDER_SUMMARY PAGE CLOSE */
+
+
+
+/* CSS FOR CART MODAL */
+.cart-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0, 0, 0.7);
+    position: fixed;
+    display: flex;
+          justify-content: center;
+          align-items: center;
+          display:none;
+          position: fixed;
+          margin-top: -30px;
+          margin-left: -20px;
+}
+.cart-modal-content{
+    width: 404px;
+    height: 796px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cart .cart-top{
+text-align: left;
+padding: 50px 0 50px 30px;
+
+background: #073C5B;
+}
+.cart .cart-top p{
+    font-size: 36px;
+line-height: 40px;
+
+color: #FFFFFF;
+}
+.cart .cart-top p .right-carret{
+margin-right: 150px;
+}
+.cart .cart-top p .right-carret:hover{
+    cursor: pointer;
+    color: #cccccc;
+    
+}
+
+
+.cart .cart-mid{
+    height: 350px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    /* border: solid 2px black; */
+}
+.cart .cart-mid:hover{
+    overflow-y: scroll;
+}
+
+.cart .cart-mid .cart-mid-des{
+display: grid;
+grid-template-columns: repeat(3, auto);
+width: 400px;
+height: 155px;
+padding: 15px;
+margin: 20px 0;
+border-bottom: solid 1px #cccccc;
+}
+.cart .cart-mid .cart-mid-des-bookBx{
+    width: 102px;
+height: 110px;
+background: #F7F7F7;
+
+text-align: center;
+}
+.cart .cart-mid .cart-mid-des-bookBx img{
+    width: 72px;
+    height: 100px;
+    margin: 5px 15px;
+}
+.cart .cart-mid .cart-mid-des .cart-mid-des-bookDes p{
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--primary);
+}
+.cart .cart-mid .cart-mid-des .cart-mid-des-cross{
+    height: 1.6rem;
+width: 1.6rem;
+border-radius: 50%;
+border: solid #cccccc 1px;
+text-align: center;
+/* padding: 5px; */
+font-size: 1.5rem;
+}
+.cart .cart-mid .cart-mid-des .cart-mid-des-cross:hover{
+    background-color: #cccccc;
+    transition: .3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cart .cart-bottom{
+    width: 100%;
+height: 274px;
+text-align: center;
+}
+.cart .cart-bottom p{
+    font-size: 30px;
+line-height: 33px;
+margin: 40px 0;
+color: var(--primary);
+text-align: left;
+margin-left: 15px;
+}
+.cart .cart-bottom button{
+    width: 289px;
+height: 41px;
+background: #073C5B;
+margin: 38px 0;
+border: none;
+outline: none;
+font-size: 22px;
+line-height: 24px;
+text-align: center;
+
+}
+.cart .cart-bottom button:hover{
+    background-color: rgb(11, 98, 148);
+    transition: .3s;
+    cursor: pointer;
+}
+.cart .cart-bottom button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* CSS FOR CARt SECTION CLOSE */
+
+
+/* CSS FOR ORDER WILL DELIVER SOON MODAL */
+
+.deliver-soon .close{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 52px;
+    top: 52px;
+}
+.deliver-soon .msg{
+    font-size: 36px;
+line-height: 44px;
+text-align: center;
+color: var(--primary);
+position: absolute;
+top: 200px;
+left: 114px;
+} */
+/* CSS FOR ORDER WILL DELIVER SOON MODAL CLOSE */
+
+/* CSS FOR SHARE YOUR THOUGHT MODAL */
+.shareYourThought{
+    position: relative;
+    width: 928px;
+height: 557px;
+
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+border-radius: 41px;
+}
+
+.shareYourThought .heading .title{
+    font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+padding:2rem ;
+color: var(--primary);
+}
+.shareYourThought .heading .close{
+   position: absolute;
+   right: 2.5rem;
+   top: 2.2rem;
+}
+
+/* CSS FOR SHARE YOUR THOUGHT MODAL CLOSE */
+
+
+/* CSS FOR SING UP VENDOR PAGE */
+.signUpVendor{
+    /* background-color: greenyellow; */
+    margin: 50px 372px;
+}
+
+.signUpVendor .head{
+    text-align: center;
+}
+
+.signUpVendor .head .head-top p{
+    font-size: 48px;
+line-height: 53px;
+
+color: var(--primary-2);
+}
+.signUpVendor .head .head-bottom p{
+    font-size: 24px;
+line-height: 70px;
+
+color: #000000;
+}
+.signUpVendor .head .head-bottom p a{
+ 
+color: #3C4F90;
+
+text-decoration: none;
+}
+
+.signUpVendor form input{
+    font-size: 20px;
+line-height: 23px;
+
+color: rgba(16, 18, 74, 0.5);
+
+width: 100%;
+
+background: none;
+margin-top: 1.2rem;
+
+outline: none;
+border: none;
+}
+.signUpVendor form hr{
+    color: rgba(0, 0, 0, 0.5);;
+}
+.signUpVendor form button{
+    background: #FFFFFF;
+border: 1px solid #007CD6;
+box-sizing: border-box;
+border-radius: 25px;
+
+font-size: 14px;
+line-height: 14px;
+color: #007CD6;
+
+padding: 13px 48px;
+margin-top: 20px;
+
+}
+.signUpVendor form .reset{
+    margin-left: 70px;
+}
+.signUpVendor form button:hover{
+    background-color: #007CD6;
+    color: #FFFFFF;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.signUpVendor .foot p{
+    font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: rgba(0, 0, 0, 0.7);
+
+margin-top: 40px;
+}
+/* CSS FOR SING UP VENDOR PAGE CLOSE*/
+
+
+/* CSS FOR VENDOR ADD BOOK PAGE */
+.addBook{
+    width: 904px;
+    margin: 100px 268px;
+}
+
+.addBook .heading p{
+    font-size: 40px;
+line-height: 50px;
+margin-bottom: 20px;
+
+color: #073C5B;
+}
+
+.addBook form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(8,auto);
+    grid-gap: 15px;
+}
+
+.addBook form .nameBook,.nameAuthor,.description,.selectImg {
+    grid-column: 1/3;
+}
+.addBook form .pqcp{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: subgrid ;
+    grid-template-rows: subgrid;
+}
+
+
+.addBook form input{
+    width: 100%;
+    font-size: 20px;
+line-height: 30px;
+color: rgba(16, 18, 74, 0.5);
+margin-top: 20px;
+outline: none;
+    border: none;
+}
+.addBook form input#description{
+    margin-bottom: 100px;
+}
+
+.addBook form hr{
+    color: rgba(0,0,0, 0.5); 
+}
+
+.addBook form button{
+    width: 133px;
+height: 39px;
+background: #FFFFFF;
+border: 1px solid #007CD6;
+box-sizing: border-box;
+border-radius: 25px;
+margin: 50px 0 0 50px;
+}
+.addBook form button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* CSS FOR VENDOR ADD BOOK PAGE CLOSE */
+
+
+/* CSS FOR VENDOR PROFILE UPDATE PAGe */
+.vendorProfileUpdate{
+    width: 904px;
+    margin: 100px 268px;
+}
+
+.vendorProfileUpdate .heading p{
+    font-size: 40px;
+line-height: 50px;
+margin-bottom: 20px;
+
+color: #073C5B;
+}
+.vendorProfileUpdate form input{
+    width: 100%;
+    font-size: 20px;
+line-height: 30px;
+color: rgba(16, 18, 74, 0.5);
+margin-top: 20px;
+outline: none;
+    border: none;
+}
+.vendorProfileUpdate form hr{
+    color: rgba(0,0,0, 0.5); 
+}
+.vendorProfileUpdate form button{
+    width: 133px;
+height: 39px;
+background: #FFFFFF;
+border: 1px solid #007CD6;
+box-sizing: border-box;
+border-radius: 25px;
+margin: 50px 0 0 50px;
+}
+.vendorProfileUpdate form button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+/* CSS FOR VENDOR PROFILE UPDATE PAGE CLOSE */
+
+
+/* CSS FOR EDIT BOOK PAGE */
+.editBook{
+    width: 904px;
+    margin: 100px 268px;
+}
+
+.editBook .heading p{
+    font-size: 40px;
+line-height: 50px;
+margin-bottom: 20px;
+
+color: #073C5B;
+}
+
+.editBook form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(8,auto);
+    grid-gap: 15px;
+}
+
+.editBook form .nameBook,.nameAuthor,.description,.selectImg {
+    grid-column: 1/3;
+}
+.editBook form .pqcp{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: subgrid ;
+    grid-template-rows: subgrid;
+}
+
+
+.editBook form input{
+    width: 100%;
+    font-size: 20px;
+line-height: 30px;
+color: rgba(16, 18, 74, 0.5);
+margin-top: 20px;
+outline: none;
+    border: none;
+}
+.editBook form input#description{
+    margin-bottom: 100px;
+}
+
+.editBook form hr{
+    color: rgba(0,0,0, 0.5); 
+}
+
+.editBook form button{
+    width: 133px;
+height: 39px;
+background: #FFFFFF;
+border: 1px solid #007CD6;
+box-sizing: border-box;
+border-radius: 25px;
+margin: 50px 0 0 50px;
+}
+.editBook form button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+/* CSS FOR EDIT BOOK PAGE CLOSE */
+
+
+/* CSS FOR VENDOR VIEW BOOK PAGE */
+
+.vendorViewBooks{
+    margin: 107px 300px;
+    width: 905px;
+}
+
+.vendorViewBooks .heading{
+    margin-bottom: 50px;
+}
+.vendorViewBooks .heading p{
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+
+color: var(--primary-2);
+}
+
+.bookListHead{
+    display: grid;
+    grid-template-columns: 390px 142px 85px auto;
+    grid-gap: 50px;
+    margin-bottom: 5px;
+}
+
+.bookListHead .pdthead p,.bookPricehead p, .bookQtyhead p, .bookActionhead p{
+    font-weight: bold;
+font-size: 22px;
+line-height: 30px;
+text-align: center;
+
+color: var(--primary-2);
+}
+
+.vendorViewBooks .bookList{
+      
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, auto);
+    margin: 25px 0;
+}
+
+.vendorViewBooks .bookList .pdt{
+display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+}
+/* .bookList .pdt .pdthead{
+    grid-column: 1/4;
+grid-row: 1/2;
+padding: 20px 0;
+} */
+.vendorViewBooks .bookList .pdt .bookBx{
+    width: 124px;
+height: 156px;
+background: #F7F7F7;
+text-align: center;
+grid-column: 1/2;
+grid-row: 2/3;
+}
+.vendorViewBooks .bookList .pdt .bookBx img{
+    width: 88px;
+height: 126px;
+margin-top: 15px;
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.vendorViewBooks .bookList .pdt .bookDesc{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.vendorViewBooks .bookList .pdt .bookDesc .book-head{
+    grid-column: 1/3;
+    grid-row: 1;
+    /* height: 0; */
+
+}
+.vendorViewBooks .bookList .pdt .bookDesc .book-head p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    
+}
+.vendorViewBooks .bookList .pdt .bookDesc .book-detail{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+}
+.vendorViewBooks .bookList .pdt .bookDesc .book-detail .book-detail-1{
+    grid-column: 1;
+}
+.bookList .pdt .bookDesc .book-detail .book-detail-2{
+    grid-column: 2;
+}
+.vendorViewBooks .bookList .pdt .bookDesc .book-detail .book-detail-1 li,.vendorViewBooks .bookList .pdt .bookDesc .book-detail .book-detail-2 li, .bookPrice p, .bookQty p{
+    list-style: none;
+    font-size: 18px;
+line-height: 30px;
+
+color: var(--primary);
+}
+
+/* .bookList .bookPrice .bookPricehead, .bookQty .bookQtyhead , .bookAction .bookActionhead {
+    padding: 20px 0;
+} */
+
+/* .bookList .bookPrice ,.bookQty,.bookAction{
+    display: grid;
+    grid-template-rows: auto auto
+} */
+
+.vendorViewBooks .bookList .bookPrice .bookPriceCnt,.bookQty .bookQtyCnt{
+    text-align: center;
+    margin-top: 50px;
+}
+.vendorViewBooks .bookList .bookAction .bookActionCnt{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vendorViewBooks .bookList .bookAction button{
+    width: 74px;
+height: 28px;
+
+background: #FFFFFF;
+border: 1px solid var(--primary);
+box-sizing: border-box;
+border-radius: 5px;
+
+font-size: 14px;
+line-height: 14px;
+
+color: var(--primary);
+}
+.vendorViewBooks .bookList .bookAction button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* CSS FOR VENDOR VIEW BOOK PAGE CLOSE */
+
+
+/* CSS FOR ORDER REQUEST PAGE */
+
+.orderRequest{
+    width: 1310px;
+    margin: 107px 110px;
+}
+
+.orderRequest .heading{
+    margin-bottom: 50px;
+}
+.orderRequest .heading p{
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+
+color: var(--primary-2);
+}
+
+.orderRequest .bookListHead{
+    display: grid;
+    grid-template-columns: 354px 158px 116px 89px 116px 90px auto;
+    grid-gap: 50px;
+    margin-bottom: 5px;
+}
+
+.orderRequest .bookListHead .bookOrderpdthead p,.bookOrderDatehead p, .bookOrderCustomerhead p, .bookOrderPricehead p, .bookOrderQtyhead p,.bookOrderTotalhead p, .bookOrderActionhead p{
+    font-weight: bold;
+font-size: 22px;
+line-height: 30px;
+text-align: center;
+
+color: var(--primary-2);
+}
+
+.orderRequest .bookList{
+      
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 354px 158px 116px 89px 116px 90px auto;
+    margin: 25px 0;
+}
+
+.orderRequest .bookList .pdt{
+display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+}
+
+.orderRequest .bookList .pdt .bookBx{
+    width: 124px;
+height: 156px;
+background: #F7F7F7;
+text-align: center;
+grid-column: 1/2;
+grid-row: 2/3;
+}
+.orderRequest .bookList .pdt .bookBx img{
+    width: 88px;
+height: 126px;
+margin-top: 15px;
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.orderRequest .bookList .pdt .bookDesc{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.orderRequest .bookList .pdt .bookDesc .book-head{
+    grid-column: 1/3;
+    grid-row: 1;
+    /* height: 0; */
+
+}
+.orderRequest .bookList .pdt .bookDesc .book-head p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    
+}
+.orderRequest .bookList .pdt .bookDesc .book-detail{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+}
+.orderRequest .bookList .pdt .bookDesc .book-detail .book-detail-1{
+    grid-column: 1;
+}
+.orderRequest .pdt .bookDesc .book-detail .book-detail-2{
+    grid-column: 2;
+}
+.orderRequest .bookList .pdt .bookDesc .book-detail .book-detail-1 li,.orderRequest .bookList .pdt .bookDesc .book-detail .book-detail-2 li{
+    list-style: none;
+    font-size: 18px;
+line-height: 30px;
+
+color: var(--primary);
+}
+
+.orderRequest .bookList .bookOrderDate .bookOrderDateCnt,.bookOrderCustomer .bookOrderCustomerCnt,.bookOrderPrice .bookOrderPriceCnt,.bookOrderQty .bookOrderQtyCnt,.bookOrderTotal .bookOrderTotalCnt{
+    text-align: center;
+    margin-top: 70px;
+}
+.orderRequest .bookList .bookOrderDate .bookOrderDateCnt p,.bookOrderCustomer .bookOrderCustomerCnt p,.bookOrderPrice .bookOrderPriceCnt p,.bookOrderQty .bookOrderQtyCnt p,.bookOrderTotal .bookOrderTotalCnt p{
+    color: var(--primary);
+}
+.orderRequest .bookList .bookOrderAction .bookOrderActionCnt{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.orderRequest .bookList .bookOrderAction button{
+    width: 74px;
+height: 28px;
+
+background: #FFFFFF;
+border: 1px solid var(--primary);
+box-sizing: border-box;
+border-radius: 5px;
+
+font-size: 14px;
+line-height: 14px;
+
+color: var(--primary);
+}
+.orderRequest .bookList .bookOrderAction button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* CSS FOR ORDER REQUEST PAGE CLOSE */
+
+
+/* CSS FOR VENDOR TRANSACTION PAGE */
+
+.vendorTransaction{
+    width: 1185px;
+    margin: 107px 180px;
+}
+
+.vendorTransaction .heading{
+    /* margin-bottom: 50px; */
+    display: flex;
+    grid-gap: 50px;
+}
+.vendorTransaction .heading p a{
+    text-decoration: none;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+color: var(--primary-2);
+}
+.vendorTransaction .heading .active-head{
+    font-size: 30px;
+    line-height: 49px;
+    color: var(--primary-2);
+    font-weight: bold;
+}
+.vendorTransaction .heading .sub-head {
+    font-size: 30px;
+    line-height: 49px;
+    color: var(--primary);
+    }
+    .vendorTransaction .heading-2{
+        display: flex;
+        justify-content: space-between;
+        margin: 28px 0;
+    }
+.vendorTransaction .heading-2 p{
+    font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+
+color: var(--primary-2);
+}
+.vendorTransaction .heading-2 button{
+    border: 1px solid var(--primary-2);
+box-sizing: border-box;
+border-radius: 5px;
+background-color: #fff;
+
+padding: 11px 19px;
+
+font-size: 16px;
+line-height: 16px;
+color: var(--primary-2);
+}
+.vendorTransaction .heading-2 button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: 1px solid #007CD6;
+    transition: .3s;
+    cursor: pointer;
+}
+.vendorTransaction .heading-2 input{
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    color: var(--primary-2);
+    font-size: 18px;
+}
+
+
+.vendorTransaction .bookListHead{
+    display: grid;
+    grid-template-columns: 354px 170px 116px 89px 116px 90px;
+    grid-gap: 50px;
+    margin-bottom: 5px;
+}
+
+.vendorTransaction .bookListHead .bookOrderedpdthead p,.bookOrderedDatehead p, .bookOrderedCustomerhead p, .bookOrderedPricehead p, .bookOrderedQtyhead p,.bookOrderedTotalhead p, .bookOrderedActionhead p{
+    font-weight: bold;
+font-size: 22px;
+line-height: 30px;
+text-align: center;
+
+color: var(--primary-2);
+}
+
+.vendorTransaction .bookList{
+      
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 354px 170px 116px 89px 116px 90px ;
+    margin: 25px 0;
+}
+
+.vendorTransaction .bookList .pdt{
+display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+}
+
+.vendorTransaction .bookList .pdt .bookBx{
+    width: 124px;
+height: 156px;
+background: #F7F7F7;
+text-align: center;
+grid-column: 1/2;
+grid-row: 2/3;
+}
+.vendorTransaction .bookList .pdt .bookBx img{
+    width: 88px;
+height: 126px;
+margin-top: 15px;
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.vendorTransaction .bookList .pdt .bookDesc{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.vendorTransaction .bookList .pdt .bookDesc .book-head{
+    grid-column: 1/3;
+    grid-row: 1;
+    /* height: 0; */
+
+}
+.vendorTransaction .bookList .pdt .bookDesc .book-head p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    
+}
+.vendorTransaction .bookList .pdt .bookDesc .book-detail{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+}
+.vendorTransaction .bookList .pdt .bookDesc .book-detail .book-detail-1{
+    grid-column: 1;
+}
+.vendorTransaction .pdt .bookDesc .book-detail .book-detail-2{
+    grid-column: 2;
+}
+.vendorTransaction .bookList .pdt .bookDesc .book-detail .book-detail-1 li,.vendorTransaction .bookList .pdt .bookDesc .book-detail .book-detail-2 li{
+    list-style: none;
+    font-size: 18px;
+line-height: 30px;
+
+color: var(--primary);
+}
+
+.vendorTransaction .bookList .bookOrderedDate .bookOrderedDateCnt,.bookOrderedCustomer .bookOrderedCustomerCnt,.bookOrderedPrice .bookOrderedPriceCnt,.bookOrderedQty .bookOrderedQtyCnt,.bookOrderedTotal .bookOrderedTotalCnt{
+    text-align: center;
+    margin-top: 70px;
+}
+.vendorTransaction .bookList .bookOrderedDate .bookOrderedDateCnt p,.bookOrderedCustomer .bookOrderedCustomerCnt p,.bookOrderedPrice .bookOrderedPriceCnt p,.bookOrderedQty .bookOrderedQtyCnt p,.bookOrderedTotal .bookOrderedTotalCnt p{
+    color: var(--primary);
+}
+
+/* CSS FOR VENDOR TRANSACTION PAGE CLOSE */
+
+
+/* CSS FOR CUSTOMER TRANSACTON PAGE */
+
+.customerTransaction{
+    width: 1185px;
+    margin: 107px 180px;
+}
+
+.customerTransaction .heading{
+    /* margin-bottom: 50px; */
+    display: flex;
+    grid-gap: 50px;
+}
+.customerTransaction .heading p a{
+    text-decoration: none;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+
+color: var(--primary-2);
+}
+.customerTransaction .heading .active-head{
+    font-size: 30px;
+    line-height: 49px;
+    color: var(--primary-2);
+    font-weight: bold;
+}
+.customerTransaction .heading .sub-head {
+    font-size: 30px;
+    line-height: 49px;
+    color: var(--primary);
+    }
+    .customerTransaction .heading-2{
+        display: flex;
+        justify-content: space-between;
+        margin: 28px 0;
+    }
+.customerTransaction .heading-2 p{
+    font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+
+color: var(--primary-2);
+}
+.customerTransaction .heading-2 button{
+    border: 1px solid var(--primary-2);
+box-sizing: border-box;
+border-radius: 5px;
+background-color: #fff;
+
+padding: 11px 19px;
+
+font-size: 16px;
+line-height: 16px;
+color: var(--primary-2);
+}
+.customerTransaction .heading-2 button:hover{
+    background-color: #007CD6;
+    color: #fff;
+    border: 1px solid #007CD6;
+    transition: .3s;
+    cursor: pointer;
+}
+.customerTransaction .heading-2 input{
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    color: var(--primary-2);
+    font-size: 18px;
+}
+
+
+.customerTransaction .bookListHead{
+    display: grid;
+    grid-template-columns: 354px 170px 116px 89px 116px 90px;
+    grid-gap: 50px;
+    margin-bottom: 5px;
+}
+
+.customerTransaction .bookListHead .bookOrderedpdthead p,.bookOrderedDatehead p, .bookOrderedCustomerhead p, .bookOrderedPricehead p, .bookOrderedQtyhead p,.bookOrderedTotalhead p, .bookOrderedActionhead p{
+    font-weight: bold;
+font-size: 22px;
+line-height: 30px;
+text-align: center;
+
+color: var(--primary-2);
+}
+
+.customerTransaction .bookList{
+      
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 354px 170px 116px 89px 116px 90px ;
+    margin: 25px 0;
+}
+
+.customerTransaction .bookList .pdt{
+display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+}
+
+.customerTransaction .bookList .pdt .bookBx{
+    width: 124px;
+height: 156px;
+background: #F7F7F7;
+text-align: center;
+grid-column: 1/2;
+grid-row: 2/3;
+}
+.customerTransaction .bookList .pdt .bookBx img{
+    width: 88px;
+height: 126px;
+margin-top: 15px;
+box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.customerTransaction .bookList .pdt .bookDesc{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.customerTransaction .bookList .pdt .bookDesc .book-head{
+    grid-column: 1/3;
+    grid-row: 1;
+    /* height: 0; */
+
+}
+.customerTransaction .bookList .pdt .bookDesc .book-head p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    
+}
+.customerTransaction .bookList .pdt .bookDesc .book-detail{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+}
+.customerTransaction .bookList .pdt .bookDesc .book-detail .book-detail-1{
+    grid-column: 1;
+}
+.customerTransaction .pdt .bookDesc .book-detail .book-detail-2{
+    grid-column: 2;
+}
+.customerTransaction .bookList .pdt .bookDesc .book-detail .book-detail-1 li,.customerTransaction .bookList .pdt .bookDesc .book-detail .book-detail-2 li{
+    list-style: none;
+    font-size: 18px;
+line-height: 30px;
+
+color: var(--primary);
+}
+
+.customerTransaction .bookList .bookOrderedDate .bookOrderedDateCnt,.bookOrderedCustomer .bookOrderedCustomerCnt,.bookOrderedPrice .bookOrderedPriceCnt,.bookOrderedQty .bookOrderedQtyCnt,.bookOrderedTotal .bookOrderedTotalCnt{
+    text-align: center;
+    margin-top: 70px;
+}
+.customerTransaction .bookList .bookOrderedDate .bookOrderedDateCnt p,.bookOrderedCustomer .bookOrderedCustomerCnt p,.bookOrderedPrice .bookOrderedPriceCnt p,.bookOrderedQty .bookOrderedQtyCnt p,.bookOrderedTotal .bookOrderedTotalCnt p{
+    color: var(--primary);
+}
+
+/* CSS FOR CUSTOMER TRANSACTION PAGE CLOSE */
+.customerTransaction .heading{
+    margin-bottom: 50px;
+}
+/* CSS FOR CUSTOMER TRANSACTON HISTORY PAGE*/
+
+
+
+/* CSS FOR CUSTOMER TRANSACTION HISTORY PAGE CLOSE */
+
+
+
+

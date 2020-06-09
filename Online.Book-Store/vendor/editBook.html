@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"><i class="bl">Online.</i><i class="wh">Book Store</i></a>
+        </div><!-- logo section close -->
+        <div class="nav">
+            <ul>
+                <li><a href="vendorUpdateProfile.html"><i class="fa fa-user-circle"></i> Vendor</a>
+                    <div class="dropdown-1">
+                        <ul>
+                            <li><a href="/index.html">Sign Out</a></li>
+                            <li><a>Books</a>
+                                <div class="dropdown-2">
+                            <ul>
+                                <li><a href="vendorAddBook.html">Add Book</a></li>
+                                <li><a href="vendorViewBooks.html">Recently Added</a></li>
+                                <li><a href="oderRequest.html">Order Request</a></li>
+                            </ul>
+                            </div>
+                            </li>
+                            <li><a href="vendorDailyTransaction.html">Transactions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                </li>
+                
+            </ul>
+        </div><!--- nav section close -->
+         </header><!--- header section close -->
+    
+<div class="editBook">
+
+    <div class="heading">
+        <p>Edit Book</p>
+    </div><!-- heading section close -->
+
+    <form action="#" method="POST">
+        <div class="nameBook"> <input type="text" placeholder="Name of Book">
+            <hr></div>
+        <div class="nameAuthor"><input type="text" placeholder="Author"><hr></div>
+
+        <div class="pqcp">
+            <div class="p"> <input type="tel" placeholder="Price"><hr></div>
+            <div class="q"><input type="tel" min="0" placeholder="Quantity"><hr></div>
+            <div class="c">  <input type="text" placeholder="Category"><hr></div>
+            <div class="p2">     <input type="text" placeholder="Publisher"><hr></div>
+        </div>
+        
+        <div class="isbn"><input type="tel" placeholder="ISBN"><hr></div>
+        <div class="description"><input type="text" id="description" placeholder="Description"><hr></div>
+        <div class="selectImg"> <input type="file" accept="image/*" id="myfile" name="myfile" multiple>
+            <hr></div>
+        <div><button type="submit">Update Book</button>
+            <button type="reset">Reset</button></div>          
+     
+    </form>
+</div><!-- editBook section close -->
+
+<footer>
+    <div class="ftr-top">
+        <div class="ftr-1">
+            <li>Online. Book Store</li><br><br>
+            <li>Koteshwor, Tinkune</li><br>
+            <li>Kathmandu, Nepal 44600</li><br>
+            <li>123 - 456 - 7890</li><br>
+            <li>online.bookstore@info.com</li><br>
+        </div><!-- ftr-1 section close -->
+        <div class="ftr-2">
+            <li>Store</li><br><br>
+            <li><a href="#">Shipping & Returns</a></li><br>
+            <li><a href="#">Store Policy</a></li><br>
+            <li><a href="#">Payment Method</a></li><br>
+           
+        </div><!-- ftr-2 section close -->
+        <div class="ftr-3">
+            <li>Socials</li><br><br>
+            <li><a href="#">Facebook</a></li><br>
+            <li><a href="#">Twitter</a></li><br>
+            <li><a href="#">Instagram</a></li><br>
+            <li><a href="#">Pinterest</a></li><br>
+        </div><!-- ftr-3 section close -->
+        <div class="ftr-4">
+            <li>Be The First TO Know</li><br><br>
+            <li>Sign up for our newsletter</li><br>
+            <input class="em" type="text" placeholder="enter your email here*"><br><br>
+            <button type="submit">Subscribe</button>
+        </div><!-- ftr-4 section close -->
+    </div><!-- ftr-top section close-->
+    <div class="ftr-bottom">
+        <p>2020 by Online. Book Store. Fictitious Business</p>
+    </div><!-- ftr-bottom close -->
+</footer><!-- footer section close -->
+
+</body>
+</html>
