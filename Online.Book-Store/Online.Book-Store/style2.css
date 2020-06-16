@@ -1,0 +1,44 @@
+
+
+.dropdown-1{
+    display: none;
+    position: relative;
+    margin-left: 30px;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.4) );
+    
+}
+.dropdown-1 ul{
+    display: block;
+
+}
+.dropdown-1 ul li{
+    margin: 10px;
+    margin-top: 5px;
+    
+}
+.dropdown-1 ul li a{
+    margin: 0;
+    font-size: 1.4rem;
+}
+.nav ul li:hover .dropdown-1{
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-2{
+    background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0) );
+    position: absolute;
+    left: -180px;
+    top: 40%;
+    display: none;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.dropdown-2 ul{
+    display: block;
+    margin-right: 20px;
+}
+.dropdown-1 ul li:hover .dropdown-2{
+    display: block;
+    cursor: pointer;
+}

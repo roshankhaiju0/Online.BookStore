@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Description</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .bg-modal{
+            width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display:none;
+          position: fixed;
+        }
+        .modal-content{
+            width: 928px;
+height: 557px;
+          background-color: #fff;
+          border-radius:10px;
+          box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+          text-align: center;
+          padding: 20px;
+          position:relative;
+        }
+        .modal-head p{
+            font-size: 36px;
+line-height: 44px;
+color: #073C5B;
+margin-bottom: 15px;
+        }
+        label{
+            font-size: 30px;
+line-height: 37px;
+color: #073C5B;
+        }
+        .modal-content form input,#input{
+            width: 50%;
+            height: 47px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+border-radius: 10px;
+margin: 30px 0 0 30px;
+font-size: 20px;
+        }
+        .close{
+          position:absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 42px;
+          transform: rotate(45deg);
+          cursor: pointer;
+        }
+        .modal-content form{
+margin-top: 52px;
+        }
+        .modal-content button{
+            position: absolute;
+width: 192px;
+height: 41px;
+left: 330px;
+bottom: 56px;
+background: #073C5B;
+border: none;
+outline: none;
+
+font-size: 22px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+        }
+        .modal-content button:hover{
+            background-color: rgb(0, 88, 151);
+            transition: .3s;
+            cursor: pointer;
+        }
+            </style>
+
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><i class="bl">Online.</i><i class="wh">Book Store</i></a>
+        </div><!-- logo section close -->
+        <div class="nav">
+            <ul>
+                <li><a href="bookstore.html">Book Store</a></li>
+                <li><a href="OurStory.html">About</a></li>
+                <li><a href="OurContact.html">Contact</a></li>
+                <li><a><i class="fa fa-user-circle"></i>Log In</a>
+                    <div class="dropdown-1">
+                        <ul>
+                            <li><a href="/vendor/VendorSignIn.html">Vendor</a></li>
+                            <li><a href="/customer/loginCustomer.html">Customer</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div><!--- nav section close -->
+         </header><!--- header section close -->
+
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="modal-head">
+            <p>Share Your Thought</p>
+            <div class="close">+</div><!-- close section close -->
+        </div><!-- modal-head section close -->
+<hr>
+<form action="#" method="POST">
+    <label for="Rating">Rating</label>
+    <select name="" id="input" style="margin-left: 45px;">
+        <option value="0">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </option>
+        <option value="1">
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </option>
+        <option value="2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </option>
+        <option value="3">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </option>
+        <option value="4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </option>
+        <option value="5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </option>
+    </select><br>
+    <label for="Content">Content</label>
+   <input type="text"><br>
+    <button type="submit">Submit</button>
+</form>
+    </div><!-- modal-content section close -->
+</div><!-- bg-modal section close -->
+
+    <main>
+
+<div class="bookDescription">
+    <div class="bookDescription-img">
+        <img src="New folder/bestsellers/bestsellers-img-6.png" alt="">
+    </div><!-- bookDescription-img section close -->
+
+    <div class="bookDescription-price">
+        <p><span class="fnt30">I'm a product</span><br><br><span class="fnt24">Rs. 25.00</span><br><br><span class="fnt20">Quantity</span></p>
+        <br>
+        <input type="number" min="1" max="10" width="48" height="48">
+        <br>
+        <button class="add-to-cart">Add to Cart</button>
+    </div><!-- bookDescription-price section close -->
+    
+    <div class="bookDescription-info">
+        <div class="book-head">
+            <p>PRODUCT INFO</p>
+        </div><!-- book-head section close -->
+
+<div class="book-detail">
+
+    <div class="book-detail-1">
+        <li>Author:</li>
+    <li>Publisher:</li>
+    <li>Category:</li>
+    <li>ISBN:</li>
+    </div><!-- book-detail-1 section close -->
+    
+    <div class="book-detail-2">
+        <li>Lee Anne Hale</li>
+    <li>Profile bode ltd.</li>
+    <li>Design & Art</li>
+    <li>200018540</li>
+    </div><!-- book-detail-2 section close -->
+    
+</div><!-- book-detail section close -->
+    </div><!-- bookDescription-info section close -->
+    
+    <div class="bookDescription-des">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Suspendisse in est ante in nibh. Integer eget aliquet 
+            nibh praesent tristique. Vel orci porta non pulvinar neque. </p>
+    </div><!-- bookDescription-des section close -->
+
+<div class="bookDescription-rating">
+    <p class="rating-hd">Average Rating</p><br>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <br><br>
+    <button id="myBtn"><i class="fas fa-comment-alt"></i> Write a review</button>
+</div><!-- book-rating section close -->
+
+</div><!-- bookDescription section close -->
+
+<div class="review-rating">
+
+    <div class="review-rating-hd">
+        <p>Ratings & Reviews</p>
+    </div><!-- review-rating-hd section close -->
+
+    <div class="review-rating-user">
+        <div class="user">
+            <img src="New folder/user-icon/LogoMakr_2b1cLk.png" alt="userImage">
+        <p>User Name</p>
+        </div><!-- user section close -->
+        <div class="user-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div><!-- user rating section close -->
+        <div class="user-review">
+            <p>Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Velit scelerisque in dictum non. Nec 
+                ullamcorper sit amet risus nullam eget felis eget nunc. Feugiat vivamus at augue eget arcu dictum varius. 
+                Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Et malesuada fames ac turpis. 
+                Tempor commodo ullamcorper a lacus. Nunc consequat interdum varius sit amet mattis. Lectus mauris </p>
+        </div><!-- user-review section close -->
+        
+    </div><!-- review-rating-user-->
+
+    <div class="review-rating-user">
+        <div class="user">
+            <img src="New folder/user-icon/LogoMakr_4h58Ie.png" alt="userImage">
+        <p>User Name</p>
+        </div><!-- user section close -->
+        <div class="user-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div><!-- user rating section close -->
+        <div class="user-review">
+            <p>Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Velit scelerisque in dictum non. Nec 
+                ullamcorper sit amet risus nullam eget felis eget nunc. Feugiat vivamus at augue eget arcu dictum varius. 
+                Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Et malesuada fames ac turpis. 
+                Tempor commodo ullamcorper a lacus. Nunc consequat interdum varius sit amet mattis. Lectus mauris </p>
+        </div><!-- user-review section close -->
+        
+    </div><!-- review-rating-user-->
+   
+</div><!-- review-rating section close -->
+
+    </main><!-- main section close -->
+
+    <footer>
+        <div class="ftr-top">
+            <div class="ftr-1">
+                <li>Online. Book Store</li><br><br>
+                <li>Koteshwor, Tinkune</li><br>
+                <li>Kathmandu, Nepal 44600</li><br>
+                <li>123 - 456 - 7890</li><br>
+                <li>online.bookstore@info.com</li><br>
+            </div><!-- ftr-1 section close -->
+            <div class="ftr-2">
+                <li>Store</li><br><br>
+                <li><a href="/Shipping&Returns.html">Shipping & Returns</a></li><br>
+                <li><a href="/StorePolicy.html">Store Policy</a></li><br>
+                <li><a href="/StorePolicy.html">Payment Method</a></li><br>
+               
+            </div><!-- ftr-2 section close -->
+            <div class="ftr-3">
+                <li>Socials</li><br><br>
+                <li><a href="www.facebook.com/OnlineBookStore">Facebook</a></li><br>
+                <li><a href="www.twitter.com/OnlineBookStore">Twitter</a></li><br>
+                <li><a href="www.instagram.com/OnlineBookStore">Instagram</a></li><br>
+                <li><a href="www.pinterest.com/OnlineBookStore">Pinterest</a></li><br>
+            </div><!-- ftr-3 section close -->
+            <div class="ftr-4">
+                <li>Be The First TO Know</li><br><br>
+                <li>Sign up for our newsletter</li><br>
+                <input class="em" type="text" placeholder="enter your email here*"><br><br>
+                <button>Subscribe</button>
+            </div><!-- ftr-4 section close -->
+        </div><!-- ftr-top section close-->
+        <div class="ftr-bottom">
+            <p>2020 by Online. Book Store. Fictitious Business</p>
+        </div><!-- ftr-bottom close -->
+    </footer><!-- footer section close -->
+
+
+    <script>
+        document.getElementById('myBtn').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display='flex';
+        });
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.bg-modal').style.display='none';
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart & Order Summary</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .bg-modal{
+            width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          /* position: absolute; */
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display:none;
+          position: fixed;
+        }
+        .modal-content{
+            width: 432px;
+height: 506px;
+          background-color: #fff;
+          border-radius:10px;
+          box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+          text-align: center;
+          padding: 20px;
+          position:relative;
+        }
+        .bg-modal .close{
+          position:absolute;
+          top: 0;
+          right: 14px;
+          font-size: 42px;
+          transform: rotate(45deg);
+          cursor: pointer;
+        }
+        .msg{
+            font-size: 36px;
+line-height: 54px;
+align-items: center;
+color: #10124A;
+margin-top: 200px;
+        }
+            </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <div class="cart-modal">
+            <div class="cart-modal-content">
+                <div class="cart">
+
+                    <div class="cart-top">
+                        <p><i class="right-carret" id="right">&#62;</i>Cart</p>          
+                    </div><!-- cart-top section close -->
+            
+                    <div class="cart-mid">
+                        <div class="cart-mid-des">
+                            <div class="cart-mid-des-bookBx">
+                                <img src="../../New folder/recommended/recommended-img-3.png" alt="">
+                            </div><!-- cart-mid-des-bookBx section close -->
+                            <div class="cart-mid-des-bookDes">
+                                <p>I'm a Product <br>
+                                <strong>QTY: 3</strong><br>
+                                <strong>Rs. 25.00</strong>
+                                </p>
+                            </div><!-- cart-mid-des-bookDes section close -->
+                            <div class="cart-mid-des-cross">
+                                <i>&times;</i>
+                            </div><!-- cart-mid-des-cross section close -->
+                        </div><!-- cart-mid-des section -->
+                       
+                        <div class="cart-mid-des">
+                            <div class="cart-mid-des-bookBx">
+                                <img src="../../New folder/recommended/recommended-img-4.png" alt="">
+                            </div><!-- cart-mid-des-bookBx section close -->
+                            <div class="cart-mid-des-bookDes">
+                                <p>I'm a Product <br>
+                                <strong>QTY: 3</strong><br>
+                                <strong>Rs. 25.00</strong>
+                                </p>
+                            </div><!-- cart-mid-des-bookDes section close -->
+                            <div class="cart-mid-des-cross">
+                                <i>&times;</i>
+                            </div><!-- cart-mid-des-cross section close -->
+                        </div><!-- cart-mid-des section -->
+                       
+                        <div class="cart-mid-des">
+                            <div class="cart-mid-des-bookBx">
+                                <img src="../../New folder/recommended/recommended-img-6.png" alt="">
+                            </div><!-- cart-mid-des-bookBx section close -->
+                            <div class="cart-mid-des-bookDes">
+                                <p>I'm a Product <br>
+                                <strong>QTY: 2</strong><br>
+                                <strong>Rs. 25.00</strong>
+                                </p>
+                            </div><!-- cart-mid-des-bookDes section close -->
+                            <div class="cart-mid-des-cross">
+                                <i>&times;</i>
+                            </div><!-- cart-mid-des-cross section close -->
+                        </div><!-- cart-mid-des section -->
+                    </div><!-- cart-mid section close -->        
+            
+            <div class="cart-bottom">
+                <p>Subtotal <br> Rs. 200.00</p>
+                <hr>
+                <button><a href="myCart-orderSummary.html"> View Cart</a></button>
+            </div><!-- cart-bottom section close -->
+            
+                </div><!-- cart section close -->
+            </div><!-- cart-modal-content section close -->
+        </div><!-- cart-modal section close -->
+        <div class="logo">
+            <a href="/index.html"><i class="bl">Online.</i><i class="wh">Book Store</i></a>
+        </div><!-- logo section close -->
+        <div class="nav">
+            <ul>
+                <li><a href="/bookstore.html">Book Store</a></li>
+                <li><a href="/OurStory.html">About</a></li>
+                <li><a href="/OurContact.html">Contact</a></li>
+                <li><a><i class="fa fa-user-circle"></i> User </a>
+                    <div class="dropdown-1">
+                        <ul>
+                            <li><a href="/index.html">Sign Out</a></li>
+                            <li><a href="customerWeeklyTransaction.html">Transactions</a></li>
+                            <li><a href="customerTransactionHistory.html">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="myCart"><a><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div><!--- nav section close -->
+         </header><!--- header section close -->
+
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close">+</div>
+        <div class="msg">
+            Order will <br> Deliver Soon
+        </div>
+        </div><!-- deliver-soon section close -->
+    </div><!-- modal-content section close -->
+</div><!-- bg-modal section close -->
+
+<div class="myCart_orderSummary">
+
+    <div class="myCart">
+        
+        <div class="heading">
+            <p>My Cart</p>
+            <hr>
+        </div><!-- heading section close -->
+
+<div class="myCartpdt">
+<div class="myCartpdt-imgbx">
+    <img src="../../New folder/recommended/recommended-img-3.png" alt="">
+</div><!-- myCartpdt-imgbx -->   
+<div class="myCartpdt-name">
+    <p>Im a product <br><span class="price">Rs. 25.00</span></p>
+</div><!-- myCartpdt-name --> 
+<div class="myCartpdt-qty">
+    <input type="number" min="1" max="10" value="3">
+</div><!-- myCartpdt-qty --> 
+<div class="myCartpdt-price">
+    <p>Rs. 75.00</p>
+</div><!-- myCartpdt-price --> 
+<div class="myCartpdt-cross">
+    
+    <i class="close">&times;</i>
+</div><!-- myCartpdt-name --> 
+</div><!-- myCartpdt section close -->
+<hr>
+<div class="myCartpdt">
+    <div class="myCartpdt-imgbx">
+        <img src="../../New folder/recommended/recommended-img-4.png" alt="">
+    </div><!-- myCartpdt-imgbx -->   
+    <div class="myCartpdt-name">
+        <p>Im a product <br><span class="price">Rs. 25.00</span></p>
+    </div><!-- myCartpdt-name --> 
+    <div class="myCartpdt-qty">
+        <input type="number" min="1" max="10" value="2" >
+    </div><!-- myCartpdt-qty --> 
+    <div class="myCartpdt-price">
+        <p>Rs. 50.00</p>
+    </div><!-- myCartpdt-price --> 
+    <div class="myCartpdt-cross">
+        
+        <span class="close">&times;</span>
+    </div><!-- myCartpdt-name --> 
+    </div><!-- myCartpdt section close -->
+    <hr>
+    <div class="myCartpdt">
+        <div class="myCartpdt-imgbx">
+            <img src="../../New folder/recommended/recommended-img-6.png" alt="">
+        </div><!-- myCartpdt-imgbx -->   
+        <div class="myCartpdt-name">
+            <p>Im a product <br><span class="price">Rs. 25.00</span></p>
+        </div><!-- myCartpdt-name --> 
+        <div class="myCartpdt-qty">
+            <input type="number" min="1" max="10" value="2">
+        </div><!-- myCartpdt-qty --> 
+        <div class="myCartpdt-price">
+            <p>Rs. 50.00</p>
+        </div><!-- myCartpdt-price --> 
+        <div class="myCartpdt-cross">
+            
+            <span class="close">&times;</span>
+        </div><!-- myCartpdt-name --> 
+        </div><!-- myCartpdt section close -->
+        <hr>
+    </div><!-- myCart section close -->
+
+    <div class="orderSummary">
+
+        <div class="heading">
+            <p>Order Summary</p>
+            <hr>
+        </div><!-- heading section close -->
+
+        <div class="orderSummary-top">
+            <div class="orderSummary-lf">
+                <p>Subtotal</p><br>
+                <p>Shipping</p>
+                <p>Kathmandu</p>
+            </div><!-- orderSummary-lf section close -->
+            <div class="orderSummary-rt">
+                <p>Rs. 175.00</p><br>
+                <p>FREE</p>
+            </div><!-- orderSummary-rt section close -->           
+        </div><!-- orderSummary-top section close -->
+
+        <hr>
+
+        <div class="orderSummary-bottom" >
+            <div class="orderSummary-lf">
+                <p style="font-size: 24px;
+                line-height: 26px;
+                color: #10124A;">Total</p>
+            </div><!-- orderSummary-lf section close -->
+            <div class="orderSummary-rt">
+                <p style="font-size: 24px;
+                line-height: 26px;text-align: right;
+                color: #10124A;">Rs. 175.00</p>
+            </div><!-- orderSummary-rt section close -->
+        </div><!-- orderSummary-bottom section close -->
+
+        <button id="myBtn"><i class="fas fa-lock"></i>
+            Checkout</button>
+             
+   </div><!-- orderSummary section close --> 
+
+</div><!-- myCart_orderSummary section close -->
+
+<footer>
+    <div class="ftr-top">
+        <div class="ftr-1">
+            <li>Online. Book Store</li><br><br>
+            <li>Koteshwor, Tinkune</li><br>
+            <li>Kathmandu, Nepal 44600</li><br>
+            <li>123 - 456 - 7890</li><br>
+            <li>online.bookstore@info.com</li><br>
+        </div><!-- ftr-1 section close -->
+        <div class="ftr-2">
+            <li>Store</li><br><br>
+            <li><a href="/Shipping&Returns.html">Shipping & Returns</a></li><br>
+            <li><a href="/StorePolicy.html">Store Policy</a></li><br>
+            <li><a href="/StorePolicy.html">Payment Method</a></li><br>
+           
+        </div><!-- ftr-2 section close -->
+        <div class="ftr-3">
+            <li>Socials</li><br><br>
+            <li><a href="www.facebook.com/OnlineBookStore">Facebook</a></li><br>
+            <li><a href="www.twitter.com/OnlineBookStore">Twitter</a></li><br>
+            <li><a href="www.instagram.com/OnlineBookStore">Instagram</a></li><br>
+            <li><a href="www.pinterest.com/OnlineBookStore">Pinterest</a></li><br>
+        </div><!-- ftr-3 section close -->
+        <div class="ftr-4">
+            <li>Be The First TO Know</li><br><br>
+            <li>Sign up for our newsletter</li><br>
+            <input class="em" type="text" placeholder="enter your email here*"><br><br>
+            <button>Subscribe</button>
+        </div><!-- ftr-4 section close -->
+    </div><!-- ftr-top section close-->
+    <div class="ftr-bottom">
+        <p>2020 by Online. Book Store. Fictitious Business</p>
+    </div><!-- ftr-bottom close -->
+</footer><!-- footer section close -->
+
+<script src="/main.js"></script>
+<script>
+    document.getElementById('myBtn').addEventListener('click', function(){
+        document.querySelector('.bg-modal').style.display='flex';
+    });
+
+document.querySelector('.close').addEventListener('click', function(){
+document.querySelector('.bg-modal').style.display = 'none';
+});
+
+</script>
+
+
+</body>
+</html>
